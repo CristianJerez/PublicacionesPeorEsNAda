@@ -1,0 +1,26 @@
+    <ion-button  (click)="onClick()">
+      <ion-icon icon="add-outline"></ion-icon>
+      Crear aviso
+    </ion-button>
+
+  <ion-list>
+    <ion-item>
+      <ion-input [(ngModel)]="tituloStr" labelPlacement="floating" placeholder="Agregue un titulo a su aviso">
+        <div slot="label">Titulo <ion-text color="danger">(Campo obligatorio)</ion-text></div>
+      </ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-input [(ngModel)]="fotoStr" labelPlacement="floating" placeholder="Incorpore una fotografia a su aviso">
+        <div slot="label">Foto <ion-text color="danger">(Campo obligatorio)</ion-text></div>
+      </ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-input [(ngModel)]="descripcionStr" labelPlacement="floating" placeholder="Realice una descripcion de su aviso">
+        <div slot="label">Descripción <ion-text color="danger">(Campo obligatorio)</ion-text></div>
+      </ion-input>
+    </ion-item>
+  </ion-list>
